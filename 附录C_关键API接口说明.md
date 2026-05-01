@@ -74,7 +74,7 @@ POST /rpc
 |--------|------|------|
 | user_id | string | 用户唯一标识 |
 | time_window | int | 行为时间窗口（天），默认90 |
-| lambda | float | 时间衰减系数，默认0.05 |
+| decay_lambda | float | 时间衰减系数，默认0.05 |
 
 **输出参数**：
 
@@ -331,8 +331,9 @@ POST /rpc
 
 ```
 1. Leader接收用户请求
-2. Leader → reader_profile_agent.build_profile()
-3. Leader → book_content_agent.analyze_content()
+2-3. Leader → reader_profile_agent.build_profile()  (并行)
+     Leader → book_content_agent.analyze_content()   (并行)
+     （注：当前实现为串行调用，两者可并行化以降低延迟）
 4. Leader → recommendation_decision_agent.arbitrate_strategy()
 5. Leader → recommendation_engine_agent.execute_recommendation()
 6. Leader返回推荐结果给用户

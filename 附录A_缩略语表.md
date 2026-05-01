@@ -4,7 +4,7 @@
 
 | 缩略语 | 英文全称 | 中文释义 |
 |--------|----------|----------|
-| ACPs | Agent Collaboration Protocols | 智能体协作协议 |
+| ACPs | Agent Communication Protocols | 智能体通信协议 |
 | ACS | Agent Capability Schema | 智能体能力模式 |
 | ADP | Agent Discovery Protocol | 智能体发现协议 |
 | AIA | Agent Identity Authentication | 智能体身份认证 |
@@ -13,6 +13,7 @@
 | ALS | Alternating Least Squares | 交替最小二乘法 |
 | API | Application Programming Interface | 应用程序编程接口 |
 | ATR | Agent Trust Registration | 智能体可信注册 |
+| AUC | Area Under Curve | 曲线下面积 |
 | BERT | Bidirectional Encoder Representations from Transformers | 双向编码器表示 |
 | BPR | Bayesian Personalized Ranking | 贝叶斯个性化排序 |
 | CF | Collaborative Filtering | 协同过滤 |
@@ -20,6 +21,7 @@
 | DSP | Data Synchronization Protocol | 数据同步协议 |
 | FAISS | Facebook AI Similarity Search | Facebook人工智能相似度搜索 |
 | FIPA | Foundation for Intelligent Physical Agents | 智能物理智能体基金会 |
+| Hit@K | Hit Rate at K | 前K命中率 |
 | ILD | Intra-List Diversity | 列表内多样性 |
 | JSON | JavaScript Object Notation | JavaScript对象表示法 |
 | LLM | Large Language Model | 大语言模型 |
@@ -27,6 +29,7 @@
 | MMR | Maximal Marginal Relevance | 最大边际相关性 |
 | MRR | Mean Reciprocal Rank | 平均倒数排名 |
 | NDCG | Normalized Discounted Cumulative Gain | 归一化折损累积增益 |
+| PCA | Principal Component Analysis | 主成分分析 |
 | RPC | Remote Procedure Call | 远程过程调用 |
 | TF-IDF | Term Frequency-Inverse Document Frequency | 词频-逆文档频率 |
 | UCB | Upper Confidence Bound | 上置信界 |

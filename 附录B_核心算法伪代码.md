@@ -7,7 +7,7 @@
 **输入**：
 - 用户近90天行为序列 $\mathcal{E} = \{e_1, e_2, \ldots, e_n\}$
 - 时间衰减系数 $\lambda = 0.05$
-- 暖启动阈值 $T_w = 20$
+- 暖启动阈值 $T_w = 20$（系统实现参数，详见第三章3.3节）
 - 冷启动阈值 $T_c = 5$
 
 **输出**：
@@ -70,7 +70,7 @@
 - 内容提案权重建议 $\alpha_{\text{content}}^{\text{prop}}$
 - 偏好散度 $\text{JSD}$
 - 历史奖励记录 $\mathcal{R} = \{(a_i, r_i)\}$
-- UCB探索系数 $C = 1.41$
+- UCB探索系数 $C = 1.0$
 
 **输出**：
 - 协同过滤权重 $\alpha_{\text{cf}}$
@@ -108,11 +108,16 @@
 26:     α_cf ← 0.7, α_content ← 0.3, λ_mmr ← 0.3
 27: else if a_best == arm_balanced then
 28:     α_cf ← 0.5, α_content ← 0.5, λ_mmr ← 0.5
-29: else if a_best == arm_explore then
-30:     α_cf ← 0.3, α_content ← 0.3, λ_mmr ← 0.7
-31: end if
-32: 
-33: // 步骤6: 置信度惩罚
+29: else if a_best == arm_content_dominant then
+30:     α_cf ← 0.3, α_content ← 0.7, λ_mmr ← 0.4
+31: else if a_best == arm_explore then
+32:     α_cf ← 0.4, α_content ← 0.3, λ_mmr ← 0.7
+33: else if a_best == arm_conservative then
+34:     α_cf ← 0.6, α_content ← 0.4, λ_mmr ← 0.3
+35: end if
+36: // 注：此处展示五个典型臂的参数配置，完整实现见第三章3.5节
+37: 
+38: // 步骤6: 置信度惩罚
 34: if c_u < 0.6 then
 35:     α_cf ← α_cf · 0.7
 36:     α_content ← α_content · 0.7
