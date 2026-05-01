@@ -97,7 +97,7 @@ POST /rpc
         "data": {
           "user_id": "U12345",
           "time_window": 90,
-          "lambda": 0.05
+          "decay_lambda": 0.05
         }
       }
     ]

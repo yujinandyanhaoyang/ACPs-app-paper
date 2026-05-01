@@ -118,15 +118,15 @@
 36: // 注：此处展示五个典型臂的参数配置，完整实现见第三章3.5节
 37: 
 38: // 步骤6: 置信度惩罚
-34: if c_u < 0.6 then
-35:     α_cf ← α_cf · 0.7
-36:     α_content ← α_content · 0.7
-37: end if
-38: 
-39: // 步骤7: 记录决策
-40: 保存 (a_best, x) 到决策历史
-41: 
-42: return α_cf, α_content, λ_mmr
+39: if c_u < 0.6 then
+40:     α_cf ← α_cf · 0.7
+41:     α_content ← α_content · 0.7
+42: end if
+43: 
+44: // 步骤7: 记录决策
+45: 保存 (a_best, x) 到决策历史
+46: 
+47: return α_cf, α_content, λ_mmr
 ```
 
 ---

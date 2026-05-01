@@ -4,7 +4,7 @@
 
 | 缩略语 | 英文全称 | 中文释义 |
 |--------|----------|----------|
-| ACPs | Agent Communication Protocols | 智能体通信协议 |
+| ACPs | Agent Collaboration Protocols | 智能体协作协议体系 |
 | ACS | Agent Capability Schema | 智能体能力模式 |
 | ADP | Agent Discovery Protocol | 智能体发现协议 |
 | AIA | Agent Identity Authentication | 智能体身份认证 |
