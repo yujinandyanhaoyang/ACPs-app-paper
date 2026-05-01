@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700">
+<rect width="1200" height="700" fill="#ffffff"/>
+<text x="600.0" y="44" text-anchor="middle" font-size="28" font-family="Arial">Figure 4-4  Performance across User Activity Levels</text>
+<line x1="120" y1="530" x2="1120" y2="530" stroke="#111"/>
+<line x1="120" y1="90" x2="120" y2="530" stroke="#111"/>
+<line x1="120" y1="530.00" x2="1120" y2="530.00" stroke="#e5e7eb"/>
+<text x="108" y="534.00" text-anchor="end" font-size="12" font-family="Arial">0.0000</text>
+<line x1="120" y1="442.00" x2="1120" y2="442.00" stroke="#e5e7eb"/>
+<text x="108" y="446.00" text-anchor="end" font-size="12" font-family="Arial">0.0007</text>
+<line x1="120" y1="354.00" x2="1120" y2="354.00" stroke="#e5e7eb"/>
+<text x="108" y="358.00" text-anchor="end" font-size="12" font-family="Arial">0.0014</text>
+<line x1="120" y1="266.00" x2="1120" y2="266.00" stroke="#e5e7eb"/>
+<text x="108" y="270.00" text-anchor="end" font-size="12" font-family="Arial">0.0021</text>
+<line x1="120" y1="178.00" x2="1120" y2="178.00" stroke="#e5e7eb"/>
+<text x="108" y="182.00" text-anchor="end" font-size="12" font-family="Arial">0.0028</text>
+<line x1="120" y1="90.00" x2="1120" y2="90.00" stroke="#e5e7eb"/>
+<text x="108" y="94.00" text-anchor="end" font-size="12" font-family="Arial">0.0036</text>
+<rect x="142.73" y="418.83" width="75.76" height="111.17" fill="#5470C6"/>
+<rect x="218.48" y="267.51" width="75.76" height="262.49" fill="#91CC75"/>
+<rect x="294.24" y="285.67" width="75.76" height="244.33" fill="#FAC858"/>
+<text x="233.64" y="564.00" text-anchor="middle" font-size="13" font-family="Arial" transform="rotate(25 233.64,564.00)">Low
+(5-10)</text>
+<rect x="476.06" y="394.12" width="75.76" height="135.88" fill="#5470C6"/>
+<rect x="551.82" y="136.20" width="75.76" height="393.80" fill="#91CC75"/>
+<rect x="627.58" y="226.62" width="75.76" height="303.38" fill="#FAC858"/>
+<text x="566.97" y="564.00" text-anchor="middle" font-size="13" font-family="Arial" transform="rotate(25 566.97,564.00)">Medium
+(11-20)</text>
+<rect x="809.39" y="381.77" width="75.76" height="148.23" fill="#5470C6"/>
+<rect x="885.15" y="90.00" width="75.76" height="440.00" fill="#91CC75"/>
+<rect x="960.91" y="209.70" width="75.76" height="320.30" fill="#FAC858"/>
+<text x="900.30" y="564.00" text-anchor="middle" font-size="13" font-family="Arial" transform="rotate(25 900.30,564.00)">High
+(20+)</text>
+<rect x="820" y="98" width="18" height="10" fill="#5470C6"/>
+<text x="846" y="108" font-size="13" font-family="Arial">Precision@10</text>
+<rect x="820" y="120" width="18" height="10" fill="#91CC75"/>
+<text x="846" y="130" font-size="13" font-family="Arial">Recall@10</text>
+<rect x="820" y="142" width="18" height="10" fill="#FAC858"/>
+<text x="846" y="152" font-size="13" font-family="Arial">NDCG@10</text>
+</svg>

@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="600">
+<rect width="1600" height="600" fill="#ffffff"/>
+<text x="800.0" y="44" text-anchor="middle" font-size="28" font-family="Arial">Figure 4-3  Ablation Study Diversity Comparison</text>
+<text x="280.0" y="70" text-anchor="middle" font-size="16" font-family="Arial">ILD</text>
+<line x1="110" y1="480" x2="510" y2="480" stroke="#111"/>
+<line x1="110" y1="90" x2="110" y2="480" stroke="#111"/>
+<line x1="110" y1="480.00" x2="510" y2="480.00" stroke="#e5e7eb"/>
+<text x="100" y="484.00" text-anchor="end" font-size="11" font-family="Arial">0.000</text>
+<line x1="110" y1="402.00" x2="510" y2="402.00" stroke="#e5e7eb"/>
+<text x="100" y="406.00" text-anchor="end" font-size="11" font-family="Arial">0.196</text>
+<line x1="110" y1="324.00" x2="510" y2="324.00" stroke="#e5e7eb"/>
+<text x="100" y="328.00" text-anchor="end" font-size="11" font-family="Arial">0.391</text>
+<line x1="110" y1="246.00" x2="510" y2="246.00" stroke="#e5e7eb"/>
+<text x="100" y="250.00" text-anchor="end" font-size="11" font-family="Arial">0.587</text>
+<line x1="110" y1="168.00" x2="510" y2="168.00" stroke="#e5e7eb"/>
+<text x="100" y="172.00" text-anchor="end" font-size="11" font-family="Arial">0.783</text>
+<line x1="110" y1="90.00" x2="510" y2="90.00" stroke="#e5e7eb"/>
+<text x="100" y="94.00" text-anchor="end" font-size="11" font-family="Arial">0.978</text>
+<rect x="110.00" y="93.59" width="41.67" height="386.41" fill="#5470C6"/>
+<text x="130.83" y="508.00" text-anchor="middle" font-size="10" font-family="Arial" transform="rotate(25 130.83,508.00)">Full</text>
+<rect x="181.67" y="99.56" width="41.67" height="380.44" fill="#5470C6"/>
+<text x="202.50" y="508.00" text-anchor="middle" font-size="10" font-family="Arial" transform="rotate(25 202.50,508.00)">w/o CF</text>
+<rect x="253.33" y="94.08" width="41.67" height="385.92" fill="#5470C6"/>
+<text x="274.17" y="508.00" text-anchor="middle" font-size="10" font-family="Arial" transform="rotate(25 274.17,508.00)">w/o
+Content</text>
+<rect x="325.00" y="156.75" width="41.67" height="323.25" fill="#5470C6"/>
+<text x="345.83" y="508.00" text-anchor="middle" font-size="10" font-family="Arial" transform="rotate(25 345.83,508.00)">w/o
+MMR</text>
+<rect x="396.67" y="90.00" width="41.67" height="390.00" fill="#5470C6"/>
+<text x="417.50" y="508.00" text-anchor="middle" font-size="10" font-family="Arial" transform="rotate(25 417.50,508.00)">w/o
+Arbiter</text>
+<rect x="468.33" y="93.59" width="41.67" height="386.41" fill="#5470C6"/>
+<text x="489.17" y="508.00" text-anchor="middle" font-size="10" font-family="Arial" transform="rotate(25 489.17,508.00)">w/o
+Feedback</text>
+<text x="780.0" y="70" text-anchor="middle" font-size="16" font-family="Arial">Coverage</text>
+<line x1="610" y1="480" x2="1010" y2="480" stroke="#111"/>
+<line x1="610" y1="90" x2="610" y2="480" stroke="#111"/>
+<line x1="610" y1="480.00" x2="1010" y2="480.00" stroke="#e5e7eb"/>
+<line x1="610" y1="402.00" x2="1010" y2="402.00" stroke="#e5e7eb"/>
+<line x1="610" y1="324.00" x2="1010" y2="324.00" stroke="#e5e7eb"/>
+<line x1="610" y1="246.00" x2="1010" y2="246.00" stroke="#e5e7eb"/>
+<line x1="610" y1="168.00" x2="1010" y2="168.00" stroke="#e5e7eb"/>
+<line x1="610" y1="90.00" x2="1010" y2="90.00" stroke="#e5e7eb"/>
+<rect x="610.00" y="182.73" width="41.67" height="297.27" fill="#91CC75"/>
+<text x="630.83" y="508.00" text-anchor="middle" font-size="10" font-family="Arial" transform="rotate(25 630.83,508.00)">Full</text>
+<rect x="681.67" y="90.00" width="41.67" height="390.00" fill="#91CC75"/>
+<text x="702.50" y="508.00" text-anchor="middle" font-size="10" font-family="Arial" transform="rotate(25 702.50,508.00)">w/o CF</text>
+<rect x="753.33" y="350.89" width="41.67" height="129.11" fill="#91CC75"/>
+<text x="774.17" y="508.00" text-anchor="middle" font-size="10" font-family="Arial" transform="rotate(25 774.17,508.00)">w/o
+Content</text>
+<rect x="825.00" y="146.79" width="41.67" height="333.21" fill="#91CC75"/>
+<text x="845.83" y="508.00" text-anchor="middle" font-size="10" font-family="Arial" transform="rotate(25 845.83,508.00)">w/o
+MMR</text>
+<rect x="896.67" y="314.95" width="41.67" height="165.05" fill="#91CC75"/>
+<text x="917.50" y="508.00" text-anchor="middle" font-size="10" font-family="Arial" transform="rotate(25 917.50,508.00)">w/o
+Arbiter</text>
+<rect x="968.33" y="182.73" width="41.67" height="297.27" fill="#91CC75"/>
+<text x="989.17" y="508.00" text-anchor="middle" font-size="10" font-family="Arial" transform="rotate(25 989.17,508.00)">w/o
+Feedback</text>
+<text x="1280.0" y="70" text-anchor="middle" font-size="16" font-family="Arial">Novelty</text>
+<line x1="1110" y1="480" x2="1510" y2="480" stroke="#111"/>
+<line x1="1110" y1="90" x2="1110" y2="480" stroke="#111"/>
+<line x1="1110" y1="480.00" x2="1510" y2="480.00" stroke="#e5e7eb"/>
+<line x1="1110" y1="402.00" x2="1510" y2="402.00" stroke="#e5e7eb"/>
+<line x1="1110" y1="324.00" x2="1510" y2="324.00" stroke="#e5e7eb"/>
+<line x1="1110" y1="246.00" x2="1510" y2="246.00" stroke="#e5e7eb"/>
+<line x1="1110" y1="168.00" x2="1510" y2="168.00" stroke="#e5e7eb"/>
+<line x1="1110" y1="90.00" x2="1510" y2="90.00" stroke="#e5e7eb"/>
+<rect x="1110.00" y="145.30" width="41.67" height="334.70" fill="#FAC858"/>
+<text x="1130.83" y="508.00" text-anchor="middle" font-size="10" font-family="Arial" transform="rotate(25 1130.83,508.00)">Full</text>
+<rect x="1181.67" y="90.00" width="41.67" height="390.00" fill="#FAC858"/>
+<text x="1202.50" y="508.00" text-anchor="middle" font-size="10" font-family="Arial" transform="rotate(25 1202.50,508.00)">w/o CF</text>
+<rect x="1253.33" y="164.90" width="41.67" height="315.10" fill="#FAC858"/>
+<text x="1274.17" y="508.00" text-anchor="middle" font-size="10" font-family="Arial" transform="rotate(25 1274.17,508.00)">w/o
+Content</text>
+<rect x="1325.00" y="139.98" width="41.67" height="340.02" fill="#FAC858"/>
+<text x="1345.83" y="508.00" text-anchor="middle" font-size="10" font-family="Arial" transform="rotate(25 1345.83,508.00)">w/o
+MMR</text>
+<rect x="1396.67" y="159.96" width="41.67" height="320.04" fill="#FAC858"/>
+<text x="1417.50" y="508.00" text-anchor="middle" font-size="10" font-family="Arial" transform="rotate(25 1417.50,508.00)">w/o
+Arbiter</text>
+<rect x="1468.33" y="145.30" width="41.67" height="334.70" fill="#FAC858"/>
+<text x="1489.17" y="508.00" text-anchor="middle" font-size="10" font-family="Arial" transform="rotate(25 1489.17,508.00)">w/o
+Feedback</text>
+</svg>
