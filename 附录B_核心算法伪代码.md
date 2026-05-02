@@ -73,8 +73,10 @@
 - UCB探索系数 $C = 1.0$
 
 **输出**：
+- 语义相似度权重 $\alpha_{\text{sem}}$
 - 协同过滤权重 $\alpha_{\text{cf}}$
-- 内容权重 $\alpha_{\text{content}}$
+- 新颖性权重 $\alpha_{\text{novel}}$
+- 时效性权重 $\alpha_{\text{time}}$
 - MMR多样性参数 $\lambda_{\text{mmr}}$
 
 **算法步骤**：
@@ -105,28 +107,34 @@
 23: 
 24: // 步骤5: 根据选中臂生成排序参数
 25: if a_best == arm_cf_dominant then
-26:     α_cf ← 0.7, α_content ← 0.3, λ_mmr ← 0.3
+26:     α_sem ← 0.1, α_cf ← 0.6, α_novel ← 0.2, α_time ← 0.1, λ_mmr ← 0.7
 27: else if a_best == arm_balanced then
-28:     α_cf ← 0.5, α_content ← 0.5, λ_mmr ← 0.5
+28:     α_sem ← 0.25, α_cf ← 0.4, α_novel ← 0.2, α_time ← 0.15, λ_mmr ← 0.5
 29: else if a_best == arm_content_dominant then
-30:     α_cf ← 0.3, α_content ← 0.7, λ_mmr ← 0.4
+30:     α_sem ← 0.5, α_cf ← 0.2, α_novel ← 0.2, α_time ← 0.1, λ_mmr ← 0.6
 31: else if a_best == arm_explore then
-32:     α_cf ← 0.4, α_content ← 0.3, λ_mmr ← 0.7
+32:     α_sem ← 0.2, α_cf ← 0.3, α_novel ← 0.4, α_time ← 0.1, λ_mmr ← 0.3
 33: else if a_best == arm_conservative then
-34:     α_cf ← 0.6, α_content ← 0.4, λ_mmr ← 0.3
+34:     α_sem ← 0.15, α_cf ← 0.5, α_novel ← 0.15, α_time ← 0.2, λ_mmr ← 0.7
 35: end if
 36: // 注：此处展示五个典型臂的参数配置，完整实现见第三章3.5节
 37: 
 38: // 步骤6: 置信度惩罚
 39: if c_u < 0.6 then
 40:     α_cf ← α_cf · 0.7
-41:     α_content ← α_content · 0.7
-42: end if
-43: 
-44: // 步骤7: 记录决策
-45: 保存 (a_best, x) 到决策历史
-46: 
-47: return α_cf, α_content, λ_mmr
+41:     α_sem ← α_sem · 0.7
+42:     // 重新归一化权重
+43:     sum ← α_sem + α_cf + α_novel + α_time
+44:     α_sem ← α_sem / sum
+45:     α_cf ← α_cf / sum
+46:     α_novel ← α_novel / sum
+47:     α_time ← α_time / sum
+48: end if
+49: 
+50: // 步骤7: 记录决策
+51: 保存 (a_best, x) 到决策历史
+52: 
+53: return α_sem, α_cf, α_novel, α_time, λ_mmr
 ```
 
 ---
