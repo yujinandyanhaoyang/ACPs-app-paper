@@ -1,6 +1,6 @@
 # 附录C 关键API接口说明
 
-本附录说明系统中各智能体的关键API接口规范，基于ACPs协议的AIP（Agent Interaction Protocol）实现。
+本附录说明系统中各智能体的关键API接口规范，基于ACPs协议的AIP（Agent Interaction Protocol）实现。以下接口规范仅列出核心字段和本系统实际使用的状态与命令，未穷举AIP协议定义的全部状态和命令类型。
 
 ## C.1 AIP RPC通用接口
 
@@ -21,7 +21,7 @@ POST /rpc
   "method": "string",
   "params": {
     "task_id": "string",
-    "command": "start | continue | complete | get | cancel",
+    "command": "start | continue | complete | get | cancel | inform",
     "skill": "string",
     "input_data": {
       "text_items": [
@@ -50,7 +50,7 @@ POST /rpc
   "id": "string",
   "result": {
     "task_id": "string",
-    "state": "Accepted | Working | AwaitingCompletion | Completed | Failed",
+    "state": "Accepted | Working | AwaitingInput | AwaitingCompletion | Completed | Failed | Canceled | Rejected",
     "output_data": {
       "text_items": [],
       "structured_items": []
@@ -176,8 +176,10 @@ POST /rpc
 
 | 参数名 | 类型 | 说明 |
 |--------|------|------|
+| alpha_sem | float | 语义相似度权重 |
 | alpha_cf | float | 协同过滤权重 |
-| alpha_content | float | 内容权重 |
+| alpha_novel | float | 新颖性权重 |
+| alpha_time | float | 时效性权重 |
 | lambda_mmr | float | MMR多样性参数 |
 | selected_arm | string | 选中的动作臂 |
 | decision_metadata | object | 决策元数据 |
@@ -197,7 +199,7 @@ POST /rpc
           },
           "content_proposal": {
             "jsd_score": 0.3,
-            "content_weights": {"alpha_content": 0.4}
+            "content_weights": {"alpha_sem": 0.3}
           },
           "context_type": "high_conf_low_div"
         }
@@ -221,8 +223,10 @@ POST /rpc
 |--------|------|------|
 | user_id | string | 用户标识 |
 | profile_vector | array[float] | 画像向量 |
+| alpha_sem | float | 语义相似度权重 |
 | alpha_cf | float | 协同过滤权重 |
-| alpha_content | float | 内容权重 |
+| alpha_novel | float | 新颖性权重 |
+| alpha_time | float | 时效性权重 |
 | lambda_mmr | float | MMR参数 |
 | top_k | int | 返回结果数量，默认10 |
 
@@ -245,8 +249,10 @@ POST /rpc
         "data": {
           "user_id": "U12345",
           "profile_vector": [0.1, 0.2, ...],
-          "alpha_cf": 0.6,
-          "alpha_content": 0.4,
+          "alpha_sem": 0.3,
+          "alpha_cf": 0.4,
+          "alpha_novel": 0.2,
+          "alpha_time": 0.1,
           "lambda_mmr": 0.5,
           "top_k": 10
         }
