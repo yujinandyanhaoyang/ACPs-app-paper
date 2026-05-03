@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1300" viewBox="0 0 2200 1300">
+<defs>
+<marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+<path d="M0,0 L12,6 L0,12 z" fill="#334155"/>
+</marker>
+<filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+<feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+</filter>
+</defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<rect x="860" y="90" width="480" height="120" rx="18" ry="18" fill="#E0F2FE" stroke="#334155" stroke-width="3" filter="url(#shadow)"/>
+<text x="1100" y="140" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="700" text-anchor="middle" fill="#0f172a"><tspan x="1100" dy="0">Reading Concierge</tspan><tspan x="1100" dy="1.35em">Leader</tspan></text>
+<rect x="80" y="310" width="360" height="120" rx="18" ry="18" fill="#F8FAFC" stroke="#334155" stroke-width="3" filter="url(#shadow)"/>
+<text x="260" y="360" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="700" text-anchor="middle" fill="#0f172a"><tspan x="260" dy="0">User Request</tspan></text>
+<rect x="250" y="550" width="340" height="130" rx="18" ry="18" fill="#EEF2FF" stroke="#334155" stroke-width="3" filter="url(#shadow)"/>
+<text x="420" y="605" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" text-anchor="middle" fill="#0f172a"><tspan x="420" dy="0">reader_profile_agent</tspan><tspan x="420" dy="1.35em">Profile Proposal</tspan></text>
+<rect x="690" y="550" width="340" height="130" rx="18" ry="18" fill="#F5F3FF" stroke="#334155" stroke-width="3" filter="url(#shadow)"/>
+<text x="860" y="605" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" text-anchor="middle" fill="#0f172a"><tspan x="860" dy="0">book_content_agent</tspan><tspan x="860" dy="1.35em">Content Proposal</tspan></text>
+<rect x="1130" y="550" width="420" height="130" rx="18" ry="18" fill="#FEF3C7" stroke="#334155" stroke-width="3" filter="url(#shadow)"/>
+<text x="1340" y="605" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" text-anchor="middle" fill="#0f172a"><tspan x="1340" dy="0">recommendation_decision_agent</tspan><tspan x="1340" dy="1.35em">Strategy Arbitration</tspan></text>
+<rect x="1650" y="550" width="380" height="130" rx="18" ry="18" fill="#DCFCE7" stroke="#334155" stroke-width="3" filter="url(#shadow)"/>
+<text x="1840" y="605" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" text-anchor="middle" fill="#0f172a"><tspan x="1840" dy="0">recommendation_engine_agent</tspan><tspan x="1840" dy="1.35em">Recommendation Execution</tspan></text>
+<rect x="860" y="820" width="480" height="130" rx="18" ry="18" fill="#FCE7F3" stroke="#334155" stroke-width="3" filter="url(#shadow)"/>
+<text x="1100" y="875" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" text-anchor="middle" fill="#0f172a"><tspan x="1100" dy="0">feedback_agent</tspan><tspan x="1100" dy="1.35em">Feedback Update</tspan></text>
+<rect x="180" y="1050" width="780" height="130" rx="18" ry="18" fill="#F8FAFC" stroke="#334155" stroke-width="3" filter="url(#shadow)"/>
+<text x="570" y="1105" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" text-anchor="middle" fill="#0f172a"><tspan x="570" dy="0">ACPs Protocol Layer</tspan><tspan x="570" dy="1.35em">AIC / ACS / ATR / AIA / ADP / DSP / AIP</tspan></text>
+<rect x="1190" y="1050" width="830" height="130" rx="18" ry="18" fill="#F8FAFC" stroke="#334155" stroke-width="3" filter="url(#shadow)"/>
+<text x="1605" y="1105" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="600" text-anchor="middle" fill="#0f172a"><tspan x="1605" dy="0">Data &amp; Model Layer</tspan><tspan x="1605" dy="1.35em">Behavior Store / FAISS / CF / Arm Records</tspan></text>
+<line x1="440" y1="370" x2="860" y2="150" stroke="#334155" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="1100" y1="210" x2="420" y2="550" stroke="#334155" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="1100" y1="210" x2="860" y2="550" stroke="#334155" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="1100" y1="210" x2="1340" y2="550" stroke="#334155" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="1550" y1="615" x2="1650" y2="615" stroke="#334155" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="1840" y1="680" x2="1100" y2="820" stroke="#334155" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="1100" y1="950" x2="420" y2="680" stroke="#334155" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="1100" y1="950" x2="860" y2="680" stroke="#334155" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="1100" y1="950" x2="1340" y2="680" stroke="#334155" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="1100" y1="950" x2="1840" y2="680" stroke="#334155" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="1100" y1="210" x2="1100" y2="1050" stroke="#334155" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow)"/>
+<line x1="420" y1="210" x2="420" y2="1050" stroke="#334155" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow)"/>
+<line x1="860" y1="210" x2="860" y2="1050" stroke="#334155" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow)"/>
+<line x1="1340" y1="210" x2="1340" y2="1050" stroke="#334155" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow)"/>
+<line x1="1840" y1="680" x2="1840" y2="1050" stroke="#334155" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow)"/>
+<line x1="1100" y1="210" x2="1100" y2="1050" stroke="#334155" stroke-width="4" stroke-dasharray="10 8" marker-end="url(#arrow)"/>
+</svg>
